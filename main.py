@@ -125,7 +125,7 @@ def valuation():
         if not is_email(email):
             email_error = "does not seem like an email address"  
 
-        error_message = username_error + password_error + verify_error + email_error
+        error_message = username_error + password_error + verify_error #+ email_error
        
         if error_message:
             return form.format(username=username, email=email,password= password, verify = verify, username_error=username_error, email_error=email_error, password_error=password_error, verify_error=verify_error)
